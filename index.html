@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Info</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+</head>
+
+<body>
+
+  <div class="grid-container weather-app">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="medium-6 large-4 small-10 text-center cell">
+
+        <h1 class="title-main">Weather Info</h1>
+
+        <form class="form-main">
+          <label for="txtCity">Enter a city to check</label>
+          <input id="txtCity" name="city" placeholder="City name..." type="text" />
+        </form>
+
+
+        <div class="card-weather">
+          <img alt="Weather image" class="time" src="https://via.placeholder.com/400x300" />
+          <div class="icon">
+            <img src="" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="name">City Name</h2>
+            <div class="condition">Weather Condition</div>
+            <div>
+              <span>Temp</span>
+              <span>&deg;C</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/forecast.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
